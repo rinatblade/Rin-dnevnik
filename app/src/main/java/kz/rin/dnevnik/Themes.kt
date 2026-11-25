@@ -60,7 +60,7 @@ fun loadFonts(ctx: Context): List<FontOption> {
             val file = parts[0].trim()
             val title = parts[1].trim()
             try {
-                val family = FontFamily(Font(ctx.assets, "fonts/$file"))
+                val family = FontFamily(Font("fonts/$file", ctx.assets))
                 result.add(FontOption(title, family))
             } catch (e: Exception) {
                 // шрифт не загрузился — пропускаем

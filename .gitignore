@@ -1,0 +1,11 @@
+.gradle/
+build/
+local.properties
+.idea/
+*.iml
+*.apk
+captures/
+.externalNativeBuild/
+.cxx/
+# шрифты скачиваются при сборке (scripts/fetch_fonts.py)
+app/src/main/assets/fonts/
